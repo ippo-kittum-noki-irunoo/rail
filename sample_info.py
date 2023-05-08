@@ -6,8 +6,16 @@ API_HASH = '0123456789abcdef0123456789abcdef'
 BOT_TOKEN = '123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11'
 USERBOT_STRING_SESSION = ''
 
+# maximum message length in Telegram
+MAX_MESSAGE_LENGTH = 4096
+
+# the maximum number of 'selectable' messages in Telegram
+TG_MAX_SELECT_LEN = environ.get("TG_MAX_SELECT_LEN", "100")
+
 # Bot settings
-CACHE_TIME = 300
+DELETE_TIME = int(environ.get('DELETE_TIME', 300))
+CH_LINK = environ.get('CH_LINK', "https://t.me/dnbdbmdnd")
+CH_FILTER = int(environ.get('CH_FILTER', -1001741705085))
 USE_CAPTION_FILTER = False
 
 # Admins, Channels & Users
